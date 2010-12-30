@@ -20,10 +20,10 @@ package org.lambico.example.consolespringhibernate.bo;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
+import javax.annotation.Resource;
 
 import org.lambico.example.consolespringhibernate.dao.PersonDao;
 import org.lambico.example.consolespringhibernate.po.Person;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -36,7 +36,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 public class PersonBO {
 
-    @Autowired
+    @Resource
     private PersonDao personDao;
 
     @Transactional()
