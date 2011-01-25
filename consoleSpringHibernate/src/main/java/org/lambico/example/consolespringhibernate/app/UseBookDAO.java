@@ -18,11 +18,11 @@
 package org.lambico.example.consolespringhibernate.app;
 
 import java.util.List;
+import javax.annotation.Resource;
 
 import org.lambico.example.consolespringhibernate.dao.BookDao;
 import org.lambico.example.consolespringhibernate.po.Book;
 import org.lambico.example.consolespringhibernate.util.ApplicationContextHolder;
-import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * A simple example of an application using Lambico for Book entity.
@@ -33,7 +33,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 public class UseBookDAO {
 
-    @Autowired
+    @Resource
     private BookDao bookDao;
 
     public UseBookDAO() {
